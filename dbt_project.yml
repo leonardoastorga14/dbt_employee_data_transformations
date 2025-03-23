@@ -1,0 +1,15 @@
+name: 'dbt_employee_data_transformations'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_employee_data_transformations'       
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+target-path: "target"
+
+models:
+  dbt_employee_data_transformations:
+    transformations:
+      +materialized: table

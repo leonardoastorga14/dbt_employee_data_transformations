@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "jaffle_shop"."main"."employee_data_clean" ("Employee Id" integer,"Name" text,"Age" integer,"Department" text,"Date of Joining" date,"Years of Experience" integer,"Country" text,"Salary" integer,"Performance Rating" text)
+  ;
+    -- dbt seed --
+    
+          COPY "jaffle_shop"."main"."employee_data_clean" FROM '/workspaces/dbt_employee_data_transformations/seeds/employee_data_clean.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

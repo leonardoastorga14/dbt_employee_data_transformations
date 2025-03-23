@@ -1,0 +1,6 @@
+dbt_employee_data_transformations:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: jaffle_shop.duckdb
